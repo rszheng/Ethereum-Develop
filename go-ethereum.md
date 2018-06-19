@@ -1,6 +1,8 @@
-Go-ethereum is the Golang client of Ethereum, and is often called ```geth``` for short. ```geth``` will be run as an Ethereum node (full or light) with an CLI. It can also be used by other processes as a gateway into the Ethereum network via JSON RPC. 
+Go-ethereum is the Golang client of Ethereum, and is often called ```geth``` for short. ```geth``` will be run as an Ethereum node (full or light) with a CLI. It can also be used by other processes as a gateway into the Ethereum network via JSON RPC. 
 
 To install and start running ```geth```, follow the official [instructions](https://github.com/ethereum/go-ethereum).
+
+### A first glance of ```geth``` commands
 
 After installation of the latest version of ```geth``` and going through some basic commands such as ``` $ geth console ``` and ```$ geth --rinkeby console ```, we can use 
 ```
