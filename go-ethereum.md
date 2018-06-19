@@ -1,6 +1,6 @@
 Go-ethereum is the Golang client of Ethereum, and is often called ```geth``` for short. ```geth``` will be run as an Ethereum node (full or light) with an CLI. It can also be used by other processes as a gateway into the Ethereum network via JSON RPC. 
 
-To install and run ```geth```, follow the official [instructions](https://github.com/ethereum/go-ethereum).
+To install and start running ```geth```, follow the official [instructions](https://github.com/ethereum/go-ethereum).
 
 After installation of the latest version of ```geth``` and going through some basic commands such as ``` $ geth console ``` and ```$ geth --rinkeby console ```, we can use 
 ```
@@ -11,10 +11,11 @@ to list all ```geth``` commandlines with illustrations. A ```geth``` command lin
 $ geth [options] command [command options] [arguments ...]
 ```
 
-The following is some key commands and options (other than those mentioned before):
+The following is some key commands and options:
 ```
 COMMANDS:
   account                           Manage accounts
+  console                           Start an interactive JavaScript environment
   attach                            Start an interactive JavaScript environment (connect to node)
   init                              Bootstrap and initialize a new genesis block
 
