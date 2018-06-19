@@ -139,8 +139,6 @@ at block: 0 (Wed, 12 Apr 2017 22:59:06 CST)
 
 To create a new account:
 ```
-> personal.newAccount
-function github.com/ethereum/go-ethereum/console.(*bridge).NewAccount-fm()
 > personal.newAccount()
 Passphrase: 
 Repeat passphrase: 
@@ -157,5 +155,6 @@ or:
 > eth.accounts
 ["0xd0d1baa48924550cd7c90fe8f959bbfade473fa4", "0x2f75e265606d26f966eb7dd050f91f592a861ad0", "0xffb4051f47b3b67e1c66a828ba7855d5123a4e84", "0x26f2dfd9621fa4f2d4eb3cf6b03a68a9e3c693d7"]
 ```
+
 
 
