@@ -156,5 +156,7 @@ or:
 ["0xd0d1baa48924550cd7c90fe8f959bbfade473fa4", "0x2f75e265606d26f966eb7dd050f91f592a861ad0", "0xffb4051f47b3b67e1c66a828ba7855d5123a4e84", "0x26f2dfd9621fa4f2d4eb3cf6b03a68a9e3c693d7"]
 ```
 
+> **Remark**. Check out this [link](https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets) for a comparison of different testnets. 
+
 
 
