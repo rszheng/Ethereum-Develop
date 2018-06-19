@@ -2,7 +2,7 @@ Go-ethereum is the Golang client of Ethereum, and is often called ```geth``` for
 
 To install and start running ```geth```, follow the official [instructions](https://github.com/ethereum/go-ethereum).
 
-## A first glance of ```geth``` commands
+## ```geth``` commands
 
 After installation of the latest version of ```geth``` and going through some basic commands such as ``` $ geth console ``` and ```$ geth --rinkeby console ```, we can use 
 ```
