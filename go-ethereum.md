@@ -47,5 +47,34 @@ MINER OPTIONS:
   --gasprice "18000000000"          Minimal gas price to accept for mining a transactions
 ```
 
+### Start the console
+```
+$ geth console
+```
+This command will:
+
+- Start ```geth``` in fast sync mode;
+- Start up ```geth```'s built-in interactive JavaScript console.
+
+As the client starts synchronizing, your terminal will be filled with ever-growing log infos, causing a total mess to your console. Therefore, in case you want to use the console immediately, you might want to get rid of the log infos:
+
+```
+$ geth console 2>> log_output
+```
+In case you don't need to use the built-in console at the moment, you may start ```geth``` using simply
+```
+$ geth
+```
+Then whenever you want to open a console, you can always attach to the already running ```geth``` instance with 
+```
+$ geth attach
+```
+In many cases, we will use a testnet such as Ropsten or Rinkeby. To start ```geth``` with Rinkeby, for example, use
+```
+$ geth --rinkeby
+```
+With a test network, to open a console using ```geth attach```, you need to specify ```--datadir "PathOfDataDirectory"```. By default, on Mac for the Rinkeby network, the ```PathOfDataDirectory``` is ```\Users\YourAccount\Library\Ethereum\rinkeby\``` . 
+
+### Manage accounts
 
   
