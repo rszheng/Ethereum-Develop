@@ -1,0 +1,3 @@
+[JSON-RPC](http://www.jsonrpc.org/specification) is a stateless, light-weight remote procedure call (RPC) protocol. Primarily this specification defines several data structures and the rules around their processing. It is transport agnostic in that the concepts can be used within the same process, over sockets, over HTTP, or in many various message passing environments. It uses JSON ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) as data format.
+
+As we will see, using JSON-RPC is not always convenient, especially for programming purpose. The [web3.js](https://github.com/ethereum/web3.js) library is the Ethereum compatible JavaScript API which gives a convenient interface for the JSON-RPC methods. We will talk more about it in this page.
