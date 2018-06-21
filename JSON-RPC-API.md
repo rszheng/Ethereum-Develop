@@ -35,7 +35,7 @@ There are several Ethereum networks, each with a unique network id:
 
 To get the current network id, use the ```net_version``` method, which requires no parameter:
 ```
-$ curl --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":9}' localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":9}' localhost:8545
 ```
 In case the response is a complain about the content type, something like:
 ```
