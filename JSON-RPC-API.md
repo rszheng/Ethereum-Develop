@@ -44,7 +44,7 @@ invalid content type, only application/json is supported
 this is because the ```--data``` option sets the content type to application/x-www-form-urlencoded. To resolve this, use the tag ```-H "Content-Type:application/json``` at the start of the call.
 ```
 // Request
-$ curl -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":9}' localhost:8545
+curl -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":9}' localhost:8545
 
 // Result
 {"jsonrpc":"2.0","id":9,"result":"4"}
@@ -55,7 +55,7 @@ $ curl -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"net
 To get a list of addresses owned by the client, use the ```eth_accounts``` method:
 ```
 // Request
-$ curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":3}' localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":3}' localhost:8545
 
 // Result
 {"jsonrpc":"2.0","id":3,"result":["0xd90b635922ed690b35c93503ff58e5022eed8ec5","0x4bc2983a5f10c3471c31db51ca48d6a6e7c21080"]}
@@ -77,7 +77,7 @@ To get balance of an account, use the ```eth_getBalance``` method with parameter
 
 ```
 // Request
-$ curl --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0xd90b635922ed690b35c93503ff58e5022eed8ec5", "latest"],"id":5}' localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0xd90b635922ed690b35c93503ff58e5022eed8ec5", "latest"],"id":5}' localhost:8545
 
 // Result
 {"jsonrpc":"2.0","id":5,"result":"0x50eaf8af71fe8800"}
@@ -100,7 +100,7 @@ To transfer ethers, use the ```eth_sendTransaction``` method. In fact, any kind 
 
 ```
 // Request
-$ curl --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{"from":"0xd90b635922ed690b35c93503ff58e5022eed8ec5", "to":"0x4bc2983a5f10c3471c31db51ca48d6a6e7c21080","gas":"0x76c0","gasPrice":"0x2540be400","value":"0x332592e00","data":""}],"id":7}' localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{"from":"0xd90b635922ed690b35c93503ff58e5022eed8ec5", "to":"0x4bc2983a5f10c3471c31db51ca48d6a6e7c21080","gas":"0x76c0","gasPrice":"0x2540be400","value":"0x332592e00","data":""}],"id":7}' localhost:8545
 
 // Result
 {"jsonrpc":"2.0","id":7,"result":"0x642df229594c187abe37544333794906a287921e1a75bdcb03ef5d6d98f379c0"}
@@ -110,7 +110,7 @@ Note that you need to [unlock](https://github.com/ethereum/go-ethereum/wiki/Comm
 The returned ```"result"``` is the transaction hash. You can use ```eth_getTransactionReceipt``` to get the transaction receipt (after the transaction was mined):
 ```
 // Request
-$ curl -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x642df229594c187abe37544333794906a287921e1a75bdcb03ef5d6d98f379c0"],"id":23}' localhost:8545
+curl -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x642df229594c187abe37544333794906a287921e1a75bdcb03ef5d6d98f379c0"],"id":23}' localhost:8545
 
 // Result
 {"jsonrpc":"2.0","id":23,"result":{"blockHash":"0xf6f1a114fca6fceea0e9f7c50dd8f9aad458d7f9ed160e95bb14361b2f027064","blockNumber":"0x2620b4","contractAddress":null,"cumulativeGasUsed":"0x5208","from":"0xd90b635922ed690b35c93503ff58e5022eed8ec5","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0x4bc2983a5f10c3471c31db51ca48d6a6e7c21080","transactionHash":"0x642df229594c187abe37544333794906a287921e1a75bdcb03ef5d6d98f379c0","transactionIndex":"0x0"}}
