@@ -46,12 +46,20 @@ this is because the ```--data``` option sets the content type to application/x-w
 // Request
 $ curl -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":9}' localhost:8545
 
-//Result
+// Result
 {"jsonrpc":"2.0","id":9,"result":"4"}
 ```
 
 ### Get accounts
 
+To get a list of addresses owned by the client, use ```eth_accounts``` method:
+```
+// Request
+$ curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":3}' localhost:8545
+
+// Result
+{"jsonrpc":"2.0","id":3,"result":["0xd90b635922ed690b35c93503ff58e5022eed8ec5","0x4bc2983a5f10c3471c31db51ca48d6a6e7c21080"]}
+```
 
 ### Send transactions
 
