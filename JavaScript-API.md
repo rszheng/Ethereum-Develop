@@ -37,7 +37,7 @@ After that, the object ```web3``` is ready for use.
 
 ## Usage of the web3 APIs
 
-
+Let's do some easy-to-follow examples. 
 
 
 
