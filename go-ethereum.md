@@ -73,7 +73,7 @@ In many cases, we will use a testnet such as Ropsten or Rinkeby. To start ```get
 ```
 $ geth --rinkeby
 ```
-With a test network, to open a console using ```geth attach```, you need to specify ```--datadir "<DATADIR>"```. By default, on Mac for the Rinkeby network, the ```<DATADIR>``` is ```\Users\USERNAME\Library\Ethereum\rinkeby\``` . 
+With a test network, to open a console using ```geth attach```, you need to specify ```--datadir "<DATADIR>"```. By default, on Mac for the Rinkeby network, the ```<DATADIR>``` is ```/Users/USERNAME/Library/Ethereum/rinkeby/``` . 
 
 ## Manage accounts
 
