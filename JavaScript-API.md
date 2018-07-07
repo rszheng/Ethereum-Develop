@@ -14,11 +14,11 @@ This will create a folder named ```node_modules``` and get all web3 relevent pac
 Then in your project, use the following to get an instance of the web3 object:
 ```
 var Web3 = require('web3');
-var web3 = new Web();
+var web3 = new Web3();
 ```
 And set a provider
 ```
-web3.setProvider(new Web3.providers.HttpProvider("http://localhost:8545"));
+web3.setProvider(new web3.providers.HttpProvider("http://localhost:8545"));
 ```
 In case you need to make sure not overwriting an already set provider, check first if web3 is defined or not:
 ```
