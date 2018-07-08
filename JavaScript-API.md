@@ -5,9 +5,11 @@ In this tutorial, we will use [Node.js](https://nodejs.org/en/download/) and its
 
 ## Setting up web3
 
-To get web3.js into your project, using the following:
+The latest version of web3.js is 1.0.0-beta.34. However, as web3.js 1.0 contains unaudited and potentially unsafe packages, and is not officially released, we will use instead the latest 0.2x.x version, which is version 0.20.6. You can find the official documentation [here](https://github.com/ethereum/wiki/wiki/JavaScript-API) (for web3.js 1.0, check out [this](http://web3js.readthedocs.io/en/1.0/index.html) link). 
+
+To get web3.js 0.20.6 into your project, using the following:
 ```
-npm install web3
+npm install web3@0.20.6
 ```
 This will create a folder named ```node_modules``` and get all web3 relevent packages downloaded into it. 
 
@@ -18,7 +20,7 @@ var web3 = new Web3();
 ```
 And set a provider
 ```
-web3.setProvider(new web3.providers.HttpProvider("http://localhost:8545"));
+web3.setProvider(new Web3.providers.HttpProvider("http://localhost:8545"));
 ```
 In case you need to make sure not overwriting an already set provider, check first if web3 is defined or not:
 ```
