@@ -14,3 +14,5 @@ var transaction = web3.eth.getTransactionFromBlock(blockID,0);
 /* var txHash = info.transactions[0];
    var transaction = web3.eth.getTransaction(txHash);
 */
+
+console.log(transaction);
