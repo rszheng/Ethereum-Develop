@@ -49,7 +49,7 @@ $ cd web3_examples
 $ npm init -y
 $ npm install web3@0.20.6
 ```
-All the following is done in your working directory ```web3_example```.
+All the following is done in your working directory ```web3_examples```. 
 
 **Accounts & balance**
 
