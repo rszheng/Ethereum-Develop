@@ -163,7 +163,7 @@ var txHash = '0x58d5db9c726458c1b7f371e8d4365dc587ff0a7b26568cb32dd3eac1b44859e5
 var transaction = web3.eth.getTransaction(txHash);
 console.log(transaction);
 ```
-However, this will not work if you're syncing in ```light``` mode, i.e. if you're running a light node. This is because a light node don't make index of transactions except those it is interested in.
+However, this will not work if you're syncing in ```light``` mode, i.e. if you're running a light node. This is because a light node doesn't make index of transactions except those it is interested in.
 
 
 **Remark**. We will learn more web3.js APIs that allow you to create contracts and send transactions. Check out [this](https://github.com/rszheng/Ethereum-Develop/blob/master/SmartContract.md) tutorial. 
