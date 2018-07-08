@@ -133,9 +133,7 @@ $ node ex2.js
   ```
   Note that I'm using the Rinkeby network. 
  
- *Get a transaction*:
- 
- We will check the first transaction of block 1234567:
+ *Get a transaction*: we will check the first transaction of block 1234567:
  ```
  var transaction = web3.eth.getTransactionFromBlock(1234567,0);
  console.log(transaction);
@@ -159,7 +157,7 @@ $ node ex2.js
   s: '0x5c8b49c21872ceaec3e5f559d8cf9f0740670637e0e8f9c67ac346e6c1c07022' }
  ```
 
-Also, you can get a transaction by its hash:
+Also, you can *get a transaction by its hash*:
 ```
 var txHash = '0x58d5db9c726458c1b7f371e8d4365dc587ff0a7b26568cb32dd3eac1b44859e5';
 var transaction = web3.eth.getTransaction(txHash);
