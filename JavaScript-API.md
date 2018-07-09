@@ -39,7 +39,7 @@ After that, the object ```web3``` is ready for use.
 
 ## Examples with the web3 APIs
 
-Let's begin with an empty working directory and do some easy-to-follow examples. 
+Let's begin with an empty work directory and do some easy-to-follow examples. 
 
 **Setting up**
 In your commandline window:
