@@ -8,8 +8,7 @@ var info = web3.eth.getBlock(blockID);
 
 var transaction = web3.eth.getTransactionFromBlock(blockID,0);
 
-// Alternatively, use the following (only when you are not running a light
-// node):
+// Alternatively, use the following (when not running a light node):
 //
 /* var txHash = info.transactions[0];
    var transaction = web3.eth.getTransaction(txHash);
