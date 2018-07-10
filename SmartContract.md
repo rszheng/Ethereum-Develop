@@ -243,6 +243,7 @@ But ```get()``` method won't change state, calling ```get()``` is only a message
 myContractInstance.get.call();
 ```
 
+A complete script for this subsection can be found [here](https://github.com/rszheng/Ethereum-Develop/blob/master/codes/smart-contract/contract-interact.js). You can copy it into your working directory and modify correspondingly.
 
     
 
