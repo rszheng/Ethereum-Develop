@@ -1,6 +1,6 @@
 In this tutorial, you will learn:
 - what a smart contract looks like, 
-- how to register the smart contract to Ethereum blockchain, and 
+- how to register a smart contract to Ethereum blockchain, and 
 - how to interact with the registered smart contract.
 
 ### A simple smart contract
@@ -37,6 +37,43 @@ Here I will not even try to write a detailed guide on Solidity, but the readers 
 ### Register a contract to Ethereum blockchain
 
 To "register" a contract is, in fact, to create the contract on the blockchain. We will do this for the ```SimpleStorage``` contract. But before we actually do this, we need to know that creating a contract on the Ethereum blockchain costs Ether, which means real money! Therefore, we will instead use the Rinkeby testnet and we need to get some Ethers on the testnet (for free).  
+
+Check out [this](https://github.com/rszheng/Ethereum-Develop/blob/master/go-ethereum.md) link for how to start using Rinkeby and get an account. To get free Ethers for your Rinkeby account, use the Rinkeby [faucet](https://www.rinkeby.io/#faucet).
+
+Now I will assume that you have already get a Rinkeby account with some ethers. 
+
+Let's start ```geth``` with your account unlocked (substitute my account with YourAccount!):
+```
+$ geth --unlock 0xd90b635922ed690b35c93503ff58e5022eed8ec5 --rpc --rinkeby console 2>> null
+Unlocking account 0xd90b635922ed690b35c93503ff58e5022eed8ec5 | Attempt 1/3
+Passphrase: 
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.8.10-stable/darwin-amd64/go1.10.2
+coinbase: 0xd90b635922ed690b35c93503ff58e5022eed8ec5
+at block: 2374378 (Wed, 30 May 2018 21:09:00 CST)
+ datadir: /Users/zhengrs/Library/Ethereum/rinkeby
+ modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+> 
+```
+Aside from unlocking your account, this commandline does more: it enables RPC interface and opens a console. You can check in the console that your account has indeed enough ether:
+```
+> eth.getBalance("0xd90b635922ed690b35c93503ff58e5022eed8ec5")
+6499580000000000000
+```
+This unlocked account will be used to send transactions later on. 
+
+There are many ways to create contracts (and send transactions), using the console, JSON-RPC-API, or JavaScript-API. Essentially, these are all the same. Frameworks such as [Truffle](https://truffleframework.com/) are much more convenient to create contracts but with the drawback of hiding all transaction details, which is not a good start point for learning contracts and transactions. To play around with truffle, you can check out [these](https://github.com/rszheng/truffle-exercises) examples.
+
+We will use web3.js, the JavaScript-API. Have a quick look at web3.js at [this](https://github.com/rszheng/Ethereum-Develop/blob/master/JavaScript-API.md) link.
+
+
+
+
+
+
+
 
 
 
