@@ -86,7 +86,7 @@ Note that the value of ```"result"``` is encoded as hex.
 
 ### Send transactions
 
-To transfer ethers, use the ```eth_sendTransaction``` method. In fact, any kind of transactions, including contract creation, can be done with this method. The ```"params"``` is a transaction objection with the following fields:
+To transfer ethers, use the ```eth_sendTransaction``` method. In fact, any kind of transactions, including contract creation, can be done with this method. The ```"params"``` is a transaction object with the following fields:
 
 - ```from```: the address the transaction is sent from.
 - ```to```: the address the transaction is directed to, optional when creating new contract.
